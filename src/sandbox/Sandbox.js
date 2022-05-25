@@ -1,17 +1,15 @@
-
-const line = 'alchmey rocks gold';
 function reverseWords(sentence) {
-    return sentence [ ymehcla skcor dlog ] | [ 'ymehcla', 'skcor ', 'dlog' ] | alchmey rocks gold 
+    return sentence 
     .split(' ')
     .map((word) => word.split('').reverse().join(''))
     .join(' ');
 }
 
-reverseWords('alchemy rocks gold'); ymehcla skcor dlog
+reverseWords('alchemy rocks gold'); 
 
 
 function titleCase(sentence) {
-    return sentence [ 'Alchemy' 'Rocks' 'Gold' ] | [ 'aLcHeMy', 'RoCks', 'gOlD' ]
+    return sentence
     .split(' ')
     .map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase())
     .join(' ');
@@ -28,26 +26,41 @@ function oddishOrEvenish (num){
 }, 0);
 
 return sum % 2 === 0 ? 'Evenish' : 'Oddish';
-console.log(oddishOrEvenish(122));
+
 }
+oddishOrEvenish(121);
+oddishOrEvenish(45);
+
 
 function at(arr, index) {
 
 }
 
-function fizzBuzz(n) { 
+function fizzBuzz(n) { 16
     let array = [];
-    for (let i= 1; i <= 16; i++)  
-    {let num =''; 
-        if ( i % 3 === 0) {
-        num + 'Fizz';
-    } else if ( i % 5 === 0) { num + 'Buzz';
-}     else{ num =i;
-    array.push(num);
-}
-    return array;
+
+    for (let i = 1; i <= n; i++)  
+    { if (i % 3 === 0 && i % 5 === 0) {
+      array.push('FizzBuzz');
+    } else if ( i % 3 === 0) 
+    { array.push('Fizz');
+    } else if ( i % 5 === 0)
+    { array.push('Buzz');
+    } else{ array.push(i);
     console.log(fizzBuzz);
 }
+   
 }
+return array;
+}
+fizzBuzz(16);
   
 
+function anagrams(wordOne, wordTwo) {
+    const sortLetters = (word) => word.split('').sort().join('');
+        console.log(sortLetters)
+    return sortLetters(wordOne) === sortLetters(wordTwo); 
+    
+}
+
+anagrams('mad', 'dam');

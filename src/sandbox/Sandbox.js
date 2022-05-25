@@ -33,8 +33,12 @@ oddishOrEvenish(45);
 
 
 function at(arr, index) {
-
+    return index >= 0 ? arr[index] : arr[arr.length + index]; 
 }
+
+at(['a', 'b', 'c'], 1);
+at(['a', 'b', 'c'], -1);
+
 
 function fizzBuzz(n) { 16
     let array = [];
